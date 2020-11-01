@@ -1,4 +1,5 @@
 import API from '../js/fetchCountries';
+import errorMessage from '../js/pnotify';
 
 import countriesList from '../templates/countriesList.hbs';
 import countriesInfo from '../templates/countriesInfo.hbs';
@@ -46,7 +47,4 @@ function showListOfCountries(countries) {
 
 function clearListItems() {
   refs.listCountries.innerHTML = '';
-}
-function errorMessage() {
-  alert('Please enter a more spesific query!');
 }
