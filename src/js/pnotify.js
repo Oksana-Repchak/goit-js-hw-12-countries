@@ -5,8 +5,7 @@ import '@pnotify/core/dist/BrightTheme.css';
 
 export default function errorMessage() {
   error({
-    text: 'Too many matches found. Please enter a more spesific query!',
+      text: 'Too many matches found. Please enter a more spesific query!',
+      delay: '2000',
   });
 }
-
-defaults.delay = '2000';
