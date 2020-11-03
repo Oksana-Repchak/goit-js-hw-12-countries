@@ -16,9 +16,8 @@ refs.input.addEventListener('input', debounce(searchCountry, 500));
 function searchCountry(event) {
     clearListItems();
     const searchQuery = refs.input.value;
-if (!searchQuery) {
-    return;
-  }
+if (!searchQuery) return;
+
   API.fetchCountries(searchQuery).then(typeOfMarkup).catch(errorMessage);
 }
 
